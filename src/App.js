@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import EffectCounterOne from './components/useEffect/EffectCounterOne';
+import EffectOnceTwo from './components/useEffect/EffectOnceTwo';
 
 //   import HookCounterOne from './components/usestate/HookCounterOne';
 // import HookCounterTwo from './components/usestate/HookCounterTwo';
@@ -11,7 +12,7 @@ import EffectCounterOne from './components/useEffect/EffectCounterOne';
 function App() {
   return (
     <div className="App">
-      <EffectCounterOne />
+      <EffectOnceTwo />
     </div>
   );
 }
