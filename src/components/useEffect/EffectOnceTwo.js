@@ -6,6 +6,10 @@ function EffectOnceTwo() {
 
     useEffect(() => {
         console.log('UseEffect Called')
+        //Return function is only for component will unmount
+        return ()=>{
+
+        }
     }, [])
 
     return (
