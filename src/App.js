@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import EffectCounterOne from './components/useEffect/EffectCounterOne';
 import EffectOnceTwo from './components/useEffect/EffectOnceTwo';
+import EffectIntervalCounter from './components/useEffect/EffectIntervalCounter';
 
 //   import HookCounterOne from './components/usestate/HookCounterOne';
 // import HookCounterTwo from './components/usestate/HookCounterTwo';
@@ -12,7 +13,7 @@ import EffectOnceTwo from './components/useEffect/EffectOnceTwo';
 function App() {
   return (
     <div className="App">
-      <EffectOnceTwo />
+      <EffectIntervalCounter />
     </div>
   );
 }
