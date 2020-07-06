@@ -1,7 +1,6 @@
+import React, { createContext,useReducer } from 'react'
+import AppReducer from  './AppReducer'
 
-# Context API
-Create file **GlobalState**, Create Initial state and use context
-```javascript
 // Initial State
 const initialState = {
     users:[
@@ -22,11 +21,7 @@ const initialState = {
 
 //Create Context
 export const GlobalContext = createContext(initialState);
-```
 
-Now create a **Provider** that will be wrapped on components in the same file
-
-```javascript
 //Provider Componenet
 export const GlobalProvider = ({children}) => {
     const [state, dispatch] = useReducer(AppReducer, initialState)
@@ -37,24 +32,3 @@ export const GlobalProvider = ({children}) => {
         </GlobalContext.Provider>
     )
 }
-```
-
-Now Create file **AppReducer**
-
-In AppReducer, write code
-```javascript
-
-export default (state, action) => {
-    switch (action.type) {
-
-    default:
-        return state
-    }
-}
-```
-Not wrap App.js with **GlobalProvider**
-
-
-Now on any component, you can simple access it by
-
-```    const {users} = useContext(GlobalContext)```
