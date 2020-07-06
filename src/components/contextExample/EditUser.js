@@ -11,7 +11,7 @@ function EditUser(props) {
     const {users, editUser} = useContext(GlobalContext)
     useEffect(() => {
         const userId = currentUserId
-        const selectedUser = users.find(user=>(user.id === Number(userId)))
+        const selectedUser = users.find(user=>(user.id === userId))
         setNameObj(selectedUser)
     }, [currentUserId, users])
 
